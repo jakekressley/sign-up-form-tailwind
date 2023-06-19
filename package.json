@@ -1,0 +1,13 @@
+{
+  "name": "sign-up-form-tailwind",
+  "version": "1.0.0",
+  "description": "Sign up form I made to practice using tailwind.",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
