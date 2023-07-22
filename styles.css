@@ -1,0 +1,9 @@
+#overlay {
+    background: rgb(0, 0, 0, .5);
+    top: 20%;
+    left: 0;
+    height: 125px;
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Prompt', sans-serif;
+}

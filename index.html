@@ -5,11 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/form-logo.png">
 </head>
 <body>
-    <div class="container flex">
-        <div class="border border-red-700 text-5xl w-2/5">img</div>
-        <div class="border border-black text-2xl">Content</div>
+    <div class="flex w-screen h-screen">
+        <!-- Image -->
+        <div class="text-white flex items-center justify-center w-2/5 h-full relative">
+            <img src="images/wind-better.jpg" alt="windy-field" class="object-cover h-full w-full">
+            <div class="absolute flex items-center justify-center p-4 gap-3 font-bold" id="overlay">
+                <img src="images/tailwind-logo.png" alt="tailwind logo" class="h-12">
+                <h1>Sign-up Form</h1>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="w-3/5 flex flex-col">
+            <p>This is not a real online service! I made this sign-up page to practice CSS using tailwindcss. Check out this sister site I designed using tailwind <a href="https://jakekressley.github.io/tailwind-sign-up-form/" target="_blank">here</a>.</p>
+        </div>
     </div>
 </body>
 </html>
