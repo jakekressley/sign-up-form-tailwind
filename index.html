@@ -25,7 +25,44 @@
 
         <!-- Content Section -->
         <div class="w-3/5 flex flex-col">
-            <p>This is not a real online service! I made this sign-up page to practice CSS using tailwindcss. Check out this sister site I designed using tailwind <a href="https://jakekressley.github.io/bootstrap-sign-up-form/" target="_blank">here</a>.</p>
+            <div class="bg-gray-100 p-12 text-lg lg:text-2xl pb-6" id="top-content">
+                <div class="text-blurbs mt-6 w-3/4">
+                    <p class="">This is not a real online service! I made this sign-up page to practice CSS using tailwindcss. Check out this sister site I designed using bootstrap <a href="https://jakekressley.github.io/bootstrap-sign-up-form/" target="_blank" class="underline font-bold">here</a>.</p>
+                    <p class="mt-10">Please do not enter any real personal information.</p>
+                </div>
+            </div>
+            <div id="middle-content" class="">
+                <div id="forms" class="text-md">
+                    <div class="form-container">
+                        <label for="first-name">First Name*</label>
+                        <input type="text" name="first-name" class="border">
+                    </div>
+                    <div class="form-container">
+                        <label for="first-name">Last Name*</label>
+                        <input type="text" name="first-name" class="border">
+                    </div>
+                    <div class="form-container">
+                        <label for="first-name">Email*</label>
+                        <input type="text" name="first-name" class="border">
+                    </div>
+                    <div class="form-container">
+                        <label for="first-name">Phone Number</label>
+                        <input type="text" name="first-name" class="border">
+                    </div>
+                    <div class="form-container">
+                        <label for="first-name">Password*</label>
+                        <input type="text" name="first-name" class="border">
+                    </div>
+                    <div class="form-container">
+                        <label for="first-name">Confirm Password*</label>
+                        <input type="text" name="first-name" class="border">
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-content" class="bg-gray-100 p-10">
+                <button id="submit-button" class="p-4 border-2 rounded-xl font-bold ">Create Account</button>
+                <p class="mt-6">Already have an account? <span>Log In</span></p>
+            </div>
         </div>
     </div>
 </body>
