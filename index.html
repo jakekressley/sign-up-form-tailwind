@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <link rel="icon" href="images/form-logo.png">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="flex w-screen h-screen">
@@ -31,38 +32,40 @@
                     <p class="mt-10">Please do not enter any real personal information.</p>
                 </div>
             </div>
-            <div id="middle-content" class="">
-                <div id="forms" class="text-md">
-                    <div class="form-container">
-                        <label for="first-name">First Name*</label>
-                        <input type="text" name="first-name" class="border" required>
-                    </div>
-                    <div class="form-container">
-                        <label for="last-name">Last Name*</label>
-                        <input type="text" name="last-name" class="border" required>
-                    </div>
-                    <div class="form-container">
-                        <label for="first-name">Email*</label>
-                        <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
-                    </div>
-                    <div class="form-container">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
-                    </div>
-                    <div class="form-container">
-                        <label for="password">Password*</label>
-                        <input type="password" id="user_password" name="password" required>
-                    </div>
-                    <div class="form-container">
-                        <label for="confirm-password">Confirm Password*</label>
-                        <input type="password" id="user_confirm_password" name="confirm-password" required>
+            <form action="">
+                <div id="middle-content" class="">
+                    <div id="forms" class="text-md">
+                        <div class="form-container">
+                            <label for="first-name">First Name*</label>
+                            <input type="text" name="first-name" class="border" required>
+                        </div>
+                        <div class="form-container">
+                            <label for="last-name">Last Name*</label>
+                            <input type="text" name="last-name" class="border" required>
+                        </div>
+                        <div class="form-container">
+                            <label for="first-name">Email*</label>
+                            <input type="email" id="user_email" name="email" placeholder="you@example.com" required title="Please enter a valid email address">
+                        </div>
+                        <div class="form-container">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+                        </div>
+                        <div class="form-container">
+                            <label for="password">Password* <span class="text-xs">(Min: 6 Characters)</span></label>
+                            <input type="password" id="user_password" name="password" minlength="6" required>
+                        </div>
+                        <div class="form-container">
+                            <label for="confirm-password">Confirm Password*</label>
+                            <input type="password" id="user_confirm_password" name="confirm-password" pattern=".{6,}" required title="Passwords must match and be at least 6 characters long">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="bottom-content" class="bg-gray-100 p-10">
-                <button id="submit-button" class="p-4 border-2 rounded-xl font-bold ">Create Account</button>
-                <p class="mt-6">Already have an account? <span>Log In</span></p>
-            </div>
+                <div id="bottom-content" class="bg-gray-100 p-10">
+                    <button id="submit-button" class="p-4 border-2 rounded-xl font-bold ">Create Account</button>
+                    <p class="mt-6">Already have an account? <span>Log In</span></p>
+                </div>
+            </form>
         </div>
     </div>
 </body>

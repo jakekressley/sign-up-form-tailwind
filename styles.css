@@ -17,7 +17,7 @@
 }
 
 #middle-content {
-    height: 36%;
+    height: 72%;
     display: flex;
     align-items: center; 
     justify-content:center;
@@ -32,7 +32,7 @@
 }
 
 #bottom-content {
-    height: 30%;
+    height: 100%;
 }
 
 .form-container {
