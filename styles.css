@@ -43,6 +43,8 @@
 .form-container input {
     border: solid 1px #b4b4b4;
     border-radius: 6px;
+    padding: 4px;
+    padding-left: .8rem;
 }
 
 .form-container input:focus {

@@ -35,27 +35,27 @@
                 <div id="forms" class="text-md">
                     <div class="form-container">
                         <label for="first-name">First Name*</label>
-                        <input type="text" name="first-name" class="border">
+                        <input type="text" name="first-name" class="border" required>
                     </div>
                     <div class="form-container">
-                        <label for="first-name">Last Name*</label>
-                        <input type="text" name="first-name" class="border">
+                        <label for="last-name">Last Name*</label>
+                        <input type="text" name="last-name" class="border" required>
                     </div>
                     <div class="form-container">
                         <label for="first-name">Email*</label>
-                        <input type="text" name="first-name" class="border">
+                        <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
                     </div>
                     <div class="form-container">
-                        <label for="first-name">Phone Number</label>
-                        <input type="text" name="first-name" class="border">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
                     </div>
                     <div class="form-container">
-                        <label for="first-name">Password*</label>
-                        <input type="text" name="first-name" class="border">
+                        <label for="password">Password*</label>
+                        <input type="password" id="user_password" name="password" required>
                     </div>
                     <div class="form-container">
-                        <label for="first-name">Confirm Password*</label>
-                        <input type="text" name="first-name" class="border">
+                        <label for="confirm-password">Confirm Password*</label>
+                        <input type="password" id="user_confirm_password" name="confirm-password" required>
                     </div>
                 </div>
             </div>
